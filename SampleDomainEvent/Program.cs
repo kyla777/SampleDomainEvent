@@ -1,5 +1,4 @@
 ﻿using System;
-using StructureMap;
 using SampleDomainEvent.Infrastructure;
 using SampleDomainEvent.Interfaces;
 using SampleDomainEvent.Entities;
@@ -11,9 +10,11 @@ namespace SampleDomainEvent
     {
         static void Main(string[] args)
         {
-            // bootstrap the application
+            // IoC Container (a.k.a. DI Container) is a framework for implementing automatic 
+            // dependency injection. It manages object creation and it's life-time, and also 
+            // injects dependencies to the class.
             var container = DomainEvents.GetContainer();
-            new Bootstrapper(container).Run();
+            new ContainerConfiguration(container).Run();
 
             // fetch an existing account
             var accountRepo = container.GetInstance<IRepository>();

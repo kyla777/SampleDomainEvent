@@ -28,27 +28,15 @@ namespace SampleDomainEvent.Events
         }
 
         #region Test
-        public static void Register<T>(Action<T> callback) where T : IDomainEvent
-        {
-            if (actions == null)
-            {
-                actions = new List<Delegate>();
-            }
-            actions.Add(callback);
-        }
-        #endregion
-
-
         //private static List<Delegate> actions;
-        //Raise
-        //if(actions != null)
+        //public static void Register<T>(Action<T> callback) where T : IDomainEvent
         //{
-        //    foreach (var action in actions)
+        //    if (actions == null)
         //    {
-        //        if(action is Action<T>) {
-        //            ((Action<T>)action)(args);
-        //        }
+        //        actions = new List<Delegate>();
         //    }
+        //    actions.Add(callback);
         //}
+        #endregion
     }
 }

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlingBag" Version="1.4.0.14" />
+    <PackageReference Include="BlingBag.AutoFac" Version="1.4.0.10" />
+    <PackageReference Include="BlingBag.NHibernate" Version="1.4.0.10" />
+    <PackageReference Include="BlingBag.StructureMap" Version="1.4.0.10" />
+    <PackageReference Include="Bootstrapper" Version="2.0.3.13" />
+    <PackageReference Include="StructureMap" Version="4.7.1" />
+  </ItemGroup>
+
+</Project>
